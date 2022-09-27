@@ -1,0 +1,467 @@
+/** todo navegador vem com um css padrão, então, para esse css não influenciar
+ na nossa página, vamos fazer um reset em alguns comandos*/
+
+*{
+   margin: 0;
+  /* padding: 0; */
+   /*border: none;*/
+   text-decoration: none;
+   box-sizing: border-box;
+
+} 
+
+
+
+body {
+	display: flex;
+
+    
+	  background-image: url("../img/fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body, button,input {
+	font-family: 'Oswald', sans-serif;
+  color: white;
+
+}
+
+p{
+  font-family: "papyrus";
+  font-size: 110%
+}
+
+.content {
+  
+  width: 100%;
+   
+
+}
+
+h4{
+  font-weight: bold;
+}
+
+.containerheader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#room header {
+  width: 95%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+.img-logo {
+  max-width: min(6.12rem, 20%);
+  border-radius: 5px;
+}
+
+.boxshadow{
+
+ box-shadow: 0 0 1em black;
+}
+
+a{
+  text-decoration: none;
+
+}
+
+a:visited {
+  color: none;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+
+.botaolink {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    
+
+}
+
+.botaolink:hover {
+  /* muda a cor dos links ao passar o mouse */
+    color: rgb(255 215 0);
+}
+
+.div-banner{
+  margin-top: .56rem;
+  width: 100%;
+}
+
+.img-banner{
+  width: 100%;
+}
+
+.div-slide{
+  margin-top: 3.12rem;
+
+}
+
+
+
+.fontecarrossel {
+
+  color: rgb(250 250 210);
+  font-family: oswald;
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.8);
+
+
+}
+ .tabela {
+
+  margin: auto;
+  margin-top: 2rem;
+  width: 70%;
+ }
+
+
+
+
+ .letra-valentime {
+  font-family: valentime;
+  font-size: 500%;
+  
+  
+  
+
+}
+
+.amarelo {
+  color: rgb(255 215 0);
+}
+
+.sombra-txt {
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.8);
+}
+
+.subir:hover img {
+  transform: scale(1.01,1.01) translateY(-10px);
+    transition: 1s;
+}
+
+.largura-total{
+  width: 100%;
+}
+
+.img-menu{
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.atalho{
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(255 215 0);
+  opacity: 0.8;
+  clip-path: circle();
+  position: fixed;
+  right: 0.5rem;
+  
+  z-index: 1;
+  transition: filter 0.2s;
+
+}
+
+.atalho:hover {
+
+  filter: brightness(1.1);
+
+}
+
+.img-atalho{
+  width: 100%;
+}
+
+.carrinho{
+  top: 20rem;
+
+}
+
+.localizacao {
+  top: 26rem;
+}
+
+
+.rodape{
+  display: flex;
+  margin-top: 20%;
+  width: 50%;
+  border: 3px solid white;
+
+  
+  margin: 3rem auto 3rem auto ;
+
+  
+}
+
+.conteudo-rodape{
+  display: flex;
+  padding: 10px;
+  width: 100%;
+
+}
+
+.tabela-rodape{
+  width: 100%;
+}
+
+
+
+.imgmenu2 {
+  width: 15%;
+  border-radius: 10px;
+}
+
+  .imgmenu3 {
+  width: 20%;
+  border-radius: 10px;
+}
+
+.subir2:hover img {
+  transform: scale(2.01,2.01) translateY(-10px);
+    transition: .8s;
+
+}
+.direita {
+ float: right;
+
+
+}
+
+.esquerda {
+float: left;
+ }
+
+ .tamanho {
+
+  font-size: 200%;
+}
+
+ .centro{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.textocentro{
+  text-align: center;
+}
+
+.fontesans {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.oswald{
+  font-family: "oswald";
+}
+
+.caixaquantidade {
+
+  font-family: oswald;
+  width: 90%;
+  text-align: center;
+  color: black;
+  outline-style: none;
+
+
+}
+
+.caixaquantidade::placeholder {
+  color: grey;
+
+}
+
+
+
+
+
+.botaocomprar {
+ 
+  margin-top: 5%;
+  background-color: #555555;;
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 2px solid #555555;
+  font-family: oswald;
+  transition-duration: 0.2s;
+
+
+}
+
+.botaocomprar:hover {
+  background-color: white;
+  color: #555555;}
+
+
+
+
+ .botaoremover {
+ 
+  
+  background-color: #555555;;
+  border: none;
+  color: white;
+  
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 2px solid #555555;
+  font-family: oswald;
+  transition-duration: 0.2s;
+  
+
+}
+ 
+.botaoremover:hover {
+  background-color: white;
+  color: #555555;}
+
+
+
+/*ARRUMAR A DIV QUE CONTÉM A TABELA, POIS NN ESTÁ DANDO MARGEM PARA A DIV DO CARRINHO*/
+.area-produtos{
+
+  display: flex;
+  width: 100%;
+
+}
+
+.carrinhobox{
+  display: flex;
+  background-color: red;
+  border-radius: 5px;
+  margin: .5rem;
+
+}
+
+.carrinho-container{
+   padding: .8rem;
+
+  width: 100%;
+  height: 100%;
+}
+.nome-icone{
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  align-items: center; 
+  justify-content: space-between;
+}
+
+
+
+.restocarrinho{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+
+
+}
+
+.tagpcarrinho{
+  display: flex;
+  align-items: center;
+  
+  
+
+}
+
+
+.logocarrinho{
+  display: block;
+  width: 3rem;
+
+}
+.pcarrinho{
+  margin-bottom: 0px;
+}
+
+
+
+
+/*MAPAS*/
+
+.mapas{
+  
+  width: 100%;
+  
+}
+
+
+.mapa{
+  display: flex;
+  border: 3px solid black;
+  margin: 2rem;
+  padding: 10px;
+
+
+}
+
+.mapa:hover {
+  transform: scale(1.01,1.01) translateY(-10px);
+    transition: .5s;
+}
+.textos-mapas{
+  width: 100%;
+  
+
+}
+
+.texto-1 {
+  background-color: red;
+  border-radius: 10px;
+  margin: 2rem;
+
+}
+
+.layout{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.restoconteudo{
+  width: 100%;
+  display: flex;
+
+  padding: .5rem;
+  align-items: center;
+}
+
+.img-texto{
+  display: flex;
+
+}
+
+.img-textolocalizacao{
+  width: 3rem;
+}
+
+.textochegar{
+  display: flex;
+  margin: auto;
+}
+
