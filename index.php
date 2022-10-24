@@ -44,6 +44,7 @@
  <?php	
   if($_GET){
       if(empty($_GET['nome']) || empty($_GET['senha'])){
+        echo "<script>alert('Existem Campos Vazios!!');</script>";
         }else{
             $nome = $_GET['nome'];
             $senha = $_GET['senha'];
@@ -107,9 +108,9 @@
         
                 }
                 
-                }
+                
                 fclose($arquivo);
-  
+            }
 
   }
       
